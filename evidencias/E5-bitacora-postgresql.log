@@ -1,0 +1,1 @@
+psql -U postgres -d comercial -At -c "SELECT replace(convert_from(pg_read_binary_file(pg_current_logfile()), 'LATIN1'), 'Temporal_Practica_2026', '<REDACTED>')" > evidencias/E5-bitacora-postgresql.log

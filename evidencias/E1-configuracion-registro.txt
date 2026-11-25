@@ -1,0 +1,1 @@
+psql -U postgres -d comercial -c "SELECT name, setting, source FROM pg_settings WHERE name IN ('logging_collector', 'log_connections', 'log_disconnections', 'log_statement', 'log_line_prefix', 'log_min_error_statement') ORDER BY name" > evidencias/E1-configuracion-registro.txt

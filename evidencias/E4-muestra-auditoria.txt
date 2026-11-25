@@ -1,0 +1,1 @@
+psql -U postgres -d comercial -c "SELECT id_evento, momento, usuario_sesion, aplicacion, operacion, id_cliente FROM auditoria.cambios_clientes ORDER BY id_evento DESC LIMIT 10" > evidencias/E4-muestra-auditoria.txt
